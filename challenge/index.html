@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Alura Latam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script> <!-- Añadido 'defer' para asegurar que el script se ejecute después de que el DOM esté completamente cargado -->
+</head>
+<body>
+    <header>
+        <img class="logo" src="/images/Logo.png" alt="AluraLogo">
+    </header>
+
+    <div class="containerP">
+        <div class="question">
+            <textarea id="inputText" class="input1" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="action">
+                <div class="anuncio">
+                    <img src="/images/Group.png" alt="">
+                    <p class="leyenda">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="buttons">
+                    <button id="encryptButton" class="button1">¡Encriptar!</button>
+                    <button id="decryptButton" class="button2">¡Desencriptar!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="response">
+            <img src="/images/Muñeco.png" alt="">
+            <p id="mensaje1" class="mensaje1">Ningún mensaje fue encontrado</p>
+            <p id="mensaje2" class="mensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button id="copyButton" class="button3">Copiar</button>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Contenido del footer, si es necesario -->
+    </footer>
+</body>
+</html>

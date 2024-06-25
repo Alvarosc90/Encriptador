@@ -1,0 +1,254 @@
+:root {
+    --main-bg-color: #0A3871;
+    --Mainbackground: #F3F5FC;
+}
+
+body {
+    background: #F3F5FC;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.logo {
+    padding-top: 20px;
+    width: 120px;
+    height: 48px;
+    top: 40px;
+    left: 40px;
+    gap: 40px;
+    opacity: 0px;
+}
+
+.containerP {
+    flex-direction: row;
+    display: flex;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    gap: 20px;
+}
+
+.input1 {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400px;
+    line-height: 48px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+}
+
+.input1::placeholder {
+    color: var(--main-bg-color);
+}
+
+.response {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 700px;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px #00000014;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.button1 {
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    gap: 8px;
+    border-radius: 24px;
+    opacity: 0px;
+    background-color: #0A3871;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;
+    transition: background-color 0.93s ease;
+    color: white;
+}
+
+.button1:hover {
+    background-color: #D8DFE8;
+    color: black;
+}
+
+.button2:hover {
+    background-color: #0A3871;
+    color: white;
+}
+
+.button2 {
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    gap: 8px;
+    border-radius: 24px;
+    opacity: 0px;
+    background-color: #D8DFE8;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;
+    transition: background-color 0.93s ease;
+}
+
+.button3 {
+    width: 336px;
+    height: 67px;
+    top: 885px;
+    left: 1032px;
+    padding: 24px;
+    gap: 8px;
+    border-radius: 24px;
+    border: 1px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;
+}
+
+.anuncio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.anuncio img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    align-items: center;
+}
+
+.leyenda {
+    width: 577px;
+    padding-left: 5px;
+    top: 168px;
+    left: 240px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+}
+
+.mensaje1 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+}
+
+.mensaje2 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin: 10px;
+}
+
+.mensaje1,
+.mensaje2 {
+    margin-bottom: 20px;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+@media (max-width: 767px) {
+    .containerP {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .question {
+        align-items: center;
+        height: auto; 
+    }
+
+    .response {
+        width: 80%;
+        height: auto; 
+    }
+
+    .buttons {
+        flex-direction: column; 
+    }
+
+    .button3 {
+        margin-bottom: 10px;
+    }
+
+    .leyenda {
+        width: 100%; 
+        left: unset; 
+    }
+    .response img {
+        display: none; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .containerP {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .question {
+        height: auto; 
+    }
+
+    .response {
+        width: 80%; 
+        height: auto; 
+    }
+
+    .buttons {
+        flex-direction: row; 
+    }
+
+
+    .leyenda {
+        width: 100%;
+        left: unset; 
+    }
+    .response img {
+        display: none; 
+    }
+    
+    .button3 {
+        margin-bottom: 10px;
+    }
+    
+}
+
